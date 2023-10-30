@@ -4,6 +4,7 @@ package metier;
 
 import domaine.Courge;
 import domaine.VenteAnnuelle;
+import domaine.VenteAnnuelleComptabilisable;
 import outils.ApplicationComptable;
 
 import java.util.List;
@@ -21,9 +22,11 @@ public class VentesDeCourges {
     }
 
     private void preparerLaComptabilisationDesVentesDe(int annee) {
-        for (Courge c : lst) {
-            VenteAnnuelle vente = c.getVente(annee);
-            if (vente != null) { ApplicationComptable.mettreEnAttenteDeComptabilisation(vente); }
-        }
+       /* for (Courge c : lst) {
+             vente = c.getVente(annee);
+            //VenteAnnuelleComptabilisable venteCompt=new VenteAnnuelleComptabilisable(vente,vente.);
+            if (vente != null) {
+                ApplicationComptable.mettreEnAttenteDeComptabilisation(vente); }
+        }*/
     }
 }

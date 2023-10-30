@@ -1,5 +1,7 @@
 package domaine.lst;
 
+import domaine.VenteAnnuelleComptabilisable;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +11,7 @@ public class ListeDesVentesDansTableau<T> implements ListeDeValeurs<T> {
     public ListeDesVentesDansTableau() { lst = new ArrayList<>(); }
 
     @Override
-    public void addVal(T val) { lst.add(val); }
+    public void addVal(VenteAnnuelleComptabilisable val) { lst.add((T) val); }
 
     @Override
     public T getVal(T val) { int pos=lst.indexOf(val); return pos==-1 ? null : lst.get(pos); }

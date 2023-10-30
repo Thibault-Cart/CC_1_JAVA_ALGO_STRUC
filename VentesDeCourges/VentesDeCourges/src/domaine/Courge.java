@@ -15,7 +15,7 @@ public class Courge {
         this.listeDesVentes = listeDesVentes;
     }
 
-    public void addVente(VenteAnnuelle v) { listeDesVentes.addVal(v); }
+    public void addVente(VenteAnnuelleComptabilisable v) { listeDesVentes.addVal(v); }
     public VenteAnnuelle getVente(int annee) { return listeDesVentes.getVal(new VenteAnnuelle(annee)); }
 
     @Override
